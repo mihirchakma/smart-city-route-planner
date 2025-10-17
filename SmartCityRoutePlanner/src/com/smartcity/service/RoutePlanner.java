@@ -14,3 +14,14 @@ public class RoutePlanner {
         this.locationTree = new LocationAVLTree();
         this.cityMap = new CityGraph();
 }
+
+public void handleAddLocation(String name) {
+        if (locationTree.locationExists(name)) {
+            System.out.println("Error: Location '" + name + "' already exists.");
+            return;
+        }
+        locationTree.addLocation(name);
+        cityMap.addLocation(name);
+        System.out.println("Successfully added location: " + name);
+    }
+
