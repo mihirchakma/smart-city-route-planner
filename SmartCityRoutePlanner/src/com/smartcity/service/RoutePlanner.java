@@ -29,9 +29,17 @@ public void handleRemoveLocation(String name) {
             System.out.println("Error: Location '" + name + "' does not exist.");
             return;
         }
-        // For a full implementation, you'd add remove to the AVL tree as well.
-        // locationTree.removeLocation(name);
+        
         cityMap.removeLocation(name);
+    }
+
+    public void handleAddRoad(String loc1, String loc2) {
+        if (!locationTree.locationExists(loc1) || !locationTree.locationExists(loc2)) {
+            System.out.println("Error: One or both locations do not exist. Please add them first.");
+            return;
+        }
+        cityMap.addRoad(loc1, loc2);
+        System.out.println("Successfully added a road between " + loc1 + " and " + loc2);
     }
 
 
