@@ -42,4 +42,8 @@ public void handleRemoveLocation(String name) {
         System.out.println("Successfully added a road between " + loc1 + " and " + loc2);
     }
 
+    public void handleRemoveRoad(String loc1, String loc2) {
+        cityMap.removeRoad(loc1, loc2);
+    }
+
 
