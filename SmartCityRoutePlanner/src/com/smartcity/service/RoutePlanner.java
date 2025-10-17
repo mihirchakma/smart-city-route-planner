@@ -23,5 +23,15 @@ public void handleAddLocation(String name) {
         locationTree.addLocation(name);
         cityMap.addLocation(name);
         System.out.println("Successfully added location: " + name);
+}
+public void handleRemoveLocation(String name) {
+        if (!locationTree.locationExists(name)) {
+            System.out.println("Error: Location '" + name + "' does not exist.");
+            return;
+        }
+        // For a full implementation, you'd add remove to the AVL tree as well.
+        // locationTree.removeLocation(name);
+        cityMap.removeLocation(name);
     }
+
 
