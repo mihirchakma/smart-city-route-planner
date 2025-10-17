@@ -46,4 +46,8 @@ public void handleRemoveLocation(String name) {
         cityMap.removeRoad(loc1, loc2);
     }
 
+    public void displayAllLocations() {
+        locationTree.displayAllLocations();
+    }
+
 
