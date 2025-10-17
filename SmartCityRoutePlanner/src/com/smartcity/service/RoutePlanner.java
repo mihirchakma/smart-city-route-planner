@@ -50,4 +50,9 @@ public void handleRemoveLocation(String name) {
         locationTree.displayAllLocations();
     }
 
+    public void displayAllConnections() {
+        cityMap.displayConnections();
+    }
+}
+
 
