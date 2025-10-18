@@ -1,6 +1,11 @@
 
 package com.smartcity.model;
 
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
 public class CityGraph 
 {
     private final Map<String, List<String>> adjList;
@@ -58,5 +63,19 @@ public void removeLocation(String location)
         System.out.println("Error: Location '" + location + "' not found.");
     }
 }
+
+public void displayConnections() {
+    System.out.println("\n--- City Road Connections ---");
+    if (adjList.isEmpty()) {
+        System.out.println("No connections to display.");
+    } else {
+        for (Map.Entry<String, List<String>> entry : adjList.entrySet()) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+        }
+    }
+    System.out.println("---------------------------\n");
+}
+
+
 
 
