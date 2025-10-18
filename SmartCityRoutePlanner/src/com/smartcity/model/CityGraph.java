@@ -1,6 +1,12 @@
+
 package com.smartcity.model;
 
-// (Member 1: Graph)
+public class CityGraph 
+{
+    private final Map<String, List<String>> adjList;
 
-public class CityGraph {
+    public CityGraph() 
+    {
+        this.adjList = new HashMap<>();
+    }
 }
