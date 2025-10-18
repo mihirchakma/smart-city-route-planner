@@ -26,3 +26,37 @@ public void addRoad(String loc1, String loc2)
 }
 
 
+public void removeRoad(String loc1, String loc2) 
+{
+    if (adjList.containsKey(loc1) && adjList.containsKey(loc2)) 
+    {
+        adjList.get(loc1).remove(loc2);
+        adjList.get(loc2).remove(loc1);
+        System.out.println("Successfully removed road between " + loc1 + " and " + loc2);
+    } 
+    
+    else 
+    {
+        System.out.println("Error: One or both locations not found.");
+    }
+}
+
+public void removeLocation(String location) 
+{
+    if (adjList.containsKey(location)) 
+    {
+        for (String neighbor : adjList.get(location)) 
+        {
+            adjList.get(neighbor).remove(location);
+        }
+        adjList.remove(location);
+        System.out.println("Successfully removed location '" + location + "' and all its roads.");
+    } 
+    
+    else 
+    {
+        System.out.println("Error: Location '" + location + "' not found.");
+    }
+}
+
+
