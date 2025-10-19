@@ -1,7 +1,6 @@
 package com.smartcity.service;
 
 import com.smartcity.model.CityGraph;
-
 import com.smartcity.model.LocationAVLTree;
 
 // (Member 2: Management Logic)
