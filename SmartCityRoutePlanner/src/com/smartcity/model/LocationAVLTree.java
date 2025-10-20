@@ -136,3 +136,4 @@ public class LocationAVLTree {
     // (Optional but good for Member 2) Method to remove a location would go here.
     // Deletion in an AVL tree is more complex but follows a similar pattern to insertion.
 }
+
