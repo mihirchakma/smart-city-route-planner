@@ -1,11 +1,12 @@
 package com.smartcity.service;
 
 import com.smartcity.model.CityGraph;
-
 import com.smartcity.model.LocationAVLTree;
 
-// (Member 2: Management Logic)
-
+/**
+ * Manages the core logic of the route planner.
+ * It integrates the location data (AVL Tree) and the road network (Graph).
+ */
 public class RoutePlanner {
     private final LocationAVLTree locationTree;
     private final CityGraph cityMap;
@@ -13,10 +14,10 @@ public class RoutePlanner {
     public RoutePlanner() {
         this.locationTree = new LocationAVLTree();
         this.cityMap = new CityGraph();
-}
+    }
 
-// Handles adding a new location
-public void handleAddLocation(String name) {
+    // Handles adding a new location
+    public void handleAddLocation(String name) {
         if (locationTree.locationExists(name)) {
             System.out.println("Error: Location '" + name + "' already exists.");
             return;
@@ -24,16 +25,19 @@ public void handleAddLocation(String name) {
         locationTree.addLocation(name);
         cityMap.addLocation(name);
         System.out.println("Successfully added location: " + name);
-}
-// Handles removing a Location
-public void handleRemoveLocation(String name) {
+    }
+
+    // Handles removing a location
+    public void handleRemoveLocation(String name) {
         if (!locationTree.locationExists(name)) {
             System.out.println("Error: Location '" + name + "' does not exist.");
             return;
         }
-        
+        // For a full implementation, you'd add remove to the AVL tree as well.
+        // locationTree.removeLocation(name);
         cityMap.removeLocation(name);
     }
+
     // Handles adding a road
     public void handleAddRoad(String loc1, String loc2) {
         if (!locationTree.locationExists(loc1) || !locationTree.locationExists(loc2)) {
@@ -44,7 +48,7 @@ public void handleRemoveLocation(String name) {
         System.out.println("Successfully added a road between " + loc1 + " and " + loc2);
     }
 
-    //Handles removing a road
+    // Handles removing a road
     public void handleRemoveRoad(String loc1, String loc2) {
         cityMap.removeRoad(loc1, loc2);
     }
@@ -59,7 +63,4 @@ public void handleRemoveLocation(String name) {
         cityMap.displayConnections();
     }
 }
-
-
-
 
