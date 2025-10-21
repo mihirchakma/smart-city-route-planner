@@ -6,6 +6,7 @@
 - **University:** Sri Lanka Technology Campus (SLTC)
 
 ### Team Members:
+
 - *22UG3-0235* - Mihir Chakma
 - *22UG3-0570* - Thavalampitiye Dhammika Thero
 - *22UG3-0912* - Pandigamage Saleela Kaushal
@@ -14,3 +15,7 @@
 # User Interface
 
 ![User Interface](Smart-City-Route-Planner-CLI-Interface.png)
+
+## Software Requiremetns:
+
+- IDE [IntelliJ IDEA](https://www.jetbrains.com/idea/)
