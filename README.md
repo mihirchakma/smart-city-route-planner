@@ -13,4 +13,4 @@
 
 # User Interface
 
-![User Interface]((Smart-City-Route-Planner-CLI-Interface.png))
+![User Interface](Smart-City-Route-Planner-CLI-Interface.png)
