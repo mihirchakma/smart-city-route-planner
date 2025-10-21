@@ -1,15 +1,18 @@
 package com.smartcity;
 
+import com.smartcity.service.RoutePlanner;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import com.smartcity.service.RoutePlanner;
-
-// (Member 4: UI and Integration)
+/**
+ * Main application class that runs the menu-driven console interface.
+ * Responsible for user input, validation, and calling the RoutePlanner service.
+ */
 
 public class Main {
 
-        public static void displayMenu() {
+    public static void displayMenu() {
         System.out.println("\n===== Smart City Route Planner =====");
         System.out.println("1. Add a new location");
         System.out.println("2. Remove a location");
