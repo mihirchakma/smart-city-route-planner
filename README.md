@@ -7,6 +7,7 @@
 - **Faculty:** Faculty of Computing and IT
 - **University:** Sri Lanka Technology Campus (SLTC)
 
+### CIT300 - Practical Assignment 01
 
 This project is a console-based application for the **CIT300 Data Structures and Algorithms** module. It models a city's transportation network using graph data structures.
 
