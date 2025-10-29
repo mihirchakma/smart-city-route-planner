@@ -76,18 +76,18 @@ smart-city-planner/
 
 ---
 
-## User Interface
+## 🖥️ User Interface
 
 ![User Interface](Smart-City-Route-Planner-CLI-Interface.png)
 
 ---
 
-## Development (Core Tools)
+## 🧑‍💻 Development (Core Tools)
 
-### Java Development Kit (JDK):
+### Java Development Kit (JDK): 🛠️ ⚙️ 🔧 🧱
   - **Recommendation:** A recent, stable version like *JDK 17 (LTS)* or *JDK 21 (LTS)* or *JDK 25 (LTS)* is recommended.
 
-### Integrated Development Environment (IDE):
+### Integrated Development Environment (IDE): 💻 ⌨️ 📦
   - **Recommended Options:**
     - **IntelliJ IDEA (Community Edition)** [IntelliJ IDEA](https://www.jetbrains.com/idea/)
     - **Visual Studio Code:** A lightweight and popular choice. You'll need to install the "Extension Pack for Java" from its marketplace.
